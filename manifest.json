@@ -1,0 +1,15 @@
+{
+  "name": "Countdown App",
+  "short_name": "Countdown",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#3c3c3c",
+  "theme_color": "#3c3c3c",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

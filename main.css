@@ -6,12 +6,12 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 1vh 1vw;
-    background-color: #3c3c3c;
+    background-color: #202020;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #ffffff;
     font-size: 5vw;
     text-align: center;
 }
