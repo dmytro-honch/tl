@@ -22,7 +22,6 @@ function updateCountdown() {
   daysContainer.textContent = days < 1 ? '' : `${String(days)} days`;
   timeContainer.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
-  console.log("Updating countdown...");
   setTimeout(() => {
     requestAnimationFrame(updateCountdown);
   }, 100);
