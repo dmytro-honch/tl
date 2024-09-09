@@ -2,16 +2,66 @@ html, body {
     height: 100%;
 }
 
+@keyframes filterColor {
+    0% {
+        filter: blur(0);
+    }
+    55% {
+        filter: blur(0);
+    }
+    60% {
+        filter: blur(10px);
+    }
+    70% {
+        filter: blur(0);
+    }
+    100% {
+        filter: blur(0);
+    }
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 1vh 1vw;
+    padding: 0;
     background-color: #202020;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Inter Semi Bold', sans-serif;
     color: #ffffff;
+    font-weight: 900;
     font-size: 5vw;
     text-align: center;
+    animation: filterColor 10s infinite linear;
+}
+
+.container div {
+    margin: 2vh 1vw;
+}
+
+@keyframes countdownColor {
+    0% {
+        color: #ff0000;
+    }
+    55% {
+        color: #ff0000;
+    }
+    60% {
+        color: #df00ff;
+    }
+    75% {
+        color: #ff0000;
+    }
+    100% {
+        color: #ff0000;
+    }
+}
+
+.emoji {
+    font-size: 16px;
+    color: red;
+    max-width: 25vw;
+    text-align: left;
+    animation: countdownColor 10s infinite linear;
 }
