@@ -25,7 +25,7 @@ body {
     font-family: 'Roboto', 'Inter', sans-serif;
     color: #ffffff;
     font-weight: 900;
-    font-size: 15vw;
+    font-size: 5vw;
     text-align: center;
 }
 
@@ -56,6 +56,7 @@ body {
 }
 
 .emoji {
+    max-width: 25vw;
     font-size: 1vw;
     text-align: left;
     animation: countdownColor 10s infinite linear;
