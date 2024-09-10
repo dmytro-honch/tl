@@ -6,14 +6,8 @@ html, body {
     0% {
         filter: blur(0);
     }
-    55% {
-        filter: blur(0);
-    }
-    60% {
+    30% {
         filter: blur(10px);
-    }
-    70% {
-        filter: blur(0);
     }
     100% {
         filter: blur(0);
@@ -28,40 +22,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter Semi Bold', sans-serif;
+    font-family: 'Roboto', 'Inter', sans-serif;
     color: #ffffff;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 15vw;
     text-align: center;
-    animation: filterColor 10s infinite linear;
 }
 
 .container div {
     margin: 2vh 1vw;
 }
 
+.container.stress {
+    animation: filterColor 3s 1 backwards linear;
+}
+
 @keyframes countdownColor {
     0% {
-        color: #ff0000;
+        filter: hue-rotate(0);
     }
     55% {
-        color: #ff0000;
+        filter: hue-rotate(0);
     }
     60% {
-        color: #df00ff;
+        filter: hue-rotate(-45deg);
     }
-    75% {
-        color: #ff0000;
+    85% {
+        filter: hue-rotate(0);
     }
     100% {
-        color: #ff0000;
+        filter: hue-rotate(0);
     }
 }
 
 .emoji {
-    font-size: 16px;
-    color: red;
-    max-width: 25vw;
+    font-size: 1vw;
     text-align: left;
     animation: countdownColor 10s infinite linear;
+}
+
+.filled {
+    color: red;
+}
+
+.empty {
+    color: #8e0000;
 }
