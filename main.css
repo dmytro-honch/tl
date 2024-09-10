@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto Serif', 'Inter', sans-serif;
+    font-family: 'Roboto', 'Inter', sans-serif;
     color: #ffffff;
     font-weight: 900;
     font-size: 5vw;
@@ -61,15 +61,15 @@ body {
     font-size: 1vw;
     text-align: left;
     animation: countdownColor 10s infinite linear;
+    color: red;
     line-height: 1.4;
 }
 
 .filled {
-    color: red;
 }
 
 .empty {
-    color: #8e0000;
+    opacity: .1;
 }
 
 @media (max-width: 600px) {
