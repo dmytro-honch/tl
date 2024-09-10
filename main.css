@@ -27,6 +27,7 @@ body {
     font-weight: 900;
     font-size: 5vw;
     text-align: center;
+    line-height: 1.1;
 }
 
 .container div {
@@ -60,6 +61,7 @@ body {
     font-size: 1vw;
     text-align: left;
     animation: countdownColor 10s infinite linear;
+    line-height: 1.4;
 }
 
 .filled {
@@ -68,4 +70,15 @@ body {
 
 .empty {
     color: #8e0000;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15vw;
+    }
+
+    .emoji {
+        max-width: 75vw;
+        font-size: 2vw;
+    }
 }
